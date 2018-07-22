@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Crystals Collector Game</title>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <div class="container">
+
+        <div class="row1">
+            <h1 class="text-center">
+                CrystalsCollector!
+            </h1>
+        </div>
+
+        <br>
+
+        <div class="row2">
+
+            <!-- <div class="col-lg-6"> -->
+            <p>You will be given a random number at the start of the game.</p>
+
+            <p>There are four crystals below. By clicking on a crystals you will add a specific amount of points to your total
+                score. </p>
+
+            <p> You win the game by matching your total score to random number, you lose the game if your total score goes above
+                the random number.</p>
+
+            <p> The value of each crystal is hidden from you until you click on it.</p>
+
+            <p> Each time when the game starts, the game will change the values of each crystal.
+            </p>
+            <!-- </div> -->
+        </div>
+        <br>
+        <!-- // add third row for challenge Random number and Wins / Loses -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="random-div" , Style="background-color: Green; height: 100px">
+                    <script type="text/javascript">
+
+                    </script>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div id="Wins" , Style="background-color: lightskyblue; height: 50px; width: 125px;"></div>
+                 
+                    <div id="Lose" , Style="background-color: lightskyblue; height: 50px; width: 125px;">
+                        
+                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <!-- Add four crystal buttons -->
+
+        <div class="row">
+            <div class="buttons-md">
+                <button class="crystalb" id="crystal0">
+                    <img width="150px" height="150px" src="assets/images/images1.jpeg" onclick="crystalClick0()">
+                </button>
+                <button class="crystalb" id="crystal1">
+                    <img width="150px" height="150px" src="assets/images/images2.jpeg" onclick="crystalClick1()">
+                </button>
+                <button class="crystalb" id="crystal2">
+                    <img width="150px" height="150px" src="assets/images/images3.jpeg" onclick="crystalClick2()">
+                </button>
+                <button class="crystalb" id="crystal3">
+                    <img width="150px" height="150px" src="assets/images/images4.jpeg" onclick="crystalClick3()">
+                </button>
+            </div>
+        </div>
+        <br>
+        <!-- total score div -->
+        <div class="row">
+            <div class="col-md-3">
+
+                <div id="Score" , Style="background-color: teal; height: 25px">
+                    
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <!-- display user total -->
+        <div class="row">
+            <div class="col-md-3">
+                <div id="totalScore" , Style="background-color: teal; height: 75px">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
